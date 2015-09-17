@@ -1,7 +1,6 @@
 package com.tuacy.wuyunxing.tuacydemo;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -14,6 +13,8 @@ import android.widget.TextView;
 
 
 import com.tuacy.wuyunxing.library.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
+import com.tuacy.wuyunxing.tuacydemo.cardview.CardViewActivity;
+import com.tuacy.wuyunxing.tuacydemo.materialdesignanimation.DesignAnimation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,6 +47,12 @@ public class MainActivity extends ActionBarActivity {
 					case "NavigationViewDownActivity":
 						startActivity(new Intent(MainActivity.this, NavigationViewDownActivity.class));
 						break;
+					case "CardViewActivity":
+						startActivity(new Intent(MainActivity.this, CardViewActivity.class));
+						break;
+					case "DesignAnimation":
+						startActivity(new Intent(MainActivity.this, DesignAnimation.class));
+						break;
 				}
 			}
 		});
@@ -55,6 +62,8 @@ public class MainActivity extends ActionBarActivity {
 	private void initTitle(List<String> titles) {
 		titles.add("NavigationViewActivity");
 		titles.add("NavigationViewDownActivity");
+		titles.add("CardViewActivity");
+		titles.add("DesignAnimation");
 	}
 
 

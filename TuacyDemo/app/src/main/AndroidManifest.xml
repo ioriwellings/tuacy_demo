@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".NavigationViewActivity"/>
         <activity android:name=".NavigationViewDownActivity"/>
+        <activity android:name=".cardview.CardViewActivity"/>
+        <activity android:name=".materialdesignanimation.DesignAnimation"/>
     </application>
 
 </manifest>
