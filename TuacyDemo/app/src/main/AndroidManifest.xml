@@ -20,6 +20,7 @@
         <activity android:name=".NavigationViewDownActivity"/>
         <activity android:name=".cardview.CardViewActivity"/>
         <activity android:name=".materialdesignanimation.DesignAnimation"/>
+        <activity android:name=".ItemTouchHelper.ItemTouchHelperActivity"/>
     </application>
 
 </manifest>

@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 
 import com.tuacy.wuyunxing.library.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
+import com.tuacy.wuyunxing.tuacydemo.ItemTouchHelper.ItemTouchHelperActivity;
 import com.tuacy.wuyunxing.tuacydemo.cardview.CardViewActivity;
 import com.tuacy.wuyunxing.tuacydemo.materialdesignanimation.DesignAnimation;
 
@@ -33,7 +34,7 @@ public class MainActivity extends ActionBarActivity {
 		mRecyclerView.setHasFixedSize(true);
 		mRecyclerView.setLayoutManager(new LinearLayoutManager(mRecyclerView.getContext()));
 		mRecyclerView.setItemAnimator(new DefaultItemAnimator());
-		mRecyclerView.addItemDecoration(new HorizontalDividerItemDecoration.Builder(mRecyclerView.getContext()).build());
+//		mRecyclerView.addItemDecoration(new HorizontalDividerItemDecoration.Builder(mRecyclerView.getContext()).build());
 
 		RecyclerViewAdapter adapter = new RecyclerViewAdapter(mTitles);
 		adapter.setItemClickListener(new RecyclerViewAdapter.OnRecyclerViewItemClickListener() {
@@ -53,6 +54,9 @@ public class MainActivity extends ActionBarActivity {
 					case "DesignAnimation":
 						startActivity(new Intent(MainActivity.this, DesignAnimation.class));
 						break;
+					case "ItemTouchHelperActivity":
+						startActivity(new Intent(MainActivity.this, ItemTouchHelperActivity.class));
+						break;
 				}
 			}
 		});
@@ -64,6 +68,7 @@ public class MainActivity extends ActionBarActivity {
 		titles.add("NavigationViewDownActivity");
 		titles.add("CardViewActivity");
 		titles.add("DesignAnimation");
+		titles.add("ItemTouchHelperActivity");
 	}
 
 
